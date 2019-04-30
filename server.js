@@ -8,6 +8,7 @@ const registration=require('./components/registration.js');
 const signin=require('./components/signin.js');
 const fetchnotes=require('./components/fetchnotes.js');
 const newnote=require('./components/newnote.js');
+const deleteNote=require('./components/deleteNote.js');
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -22,12 +23,22 @@ const psql= knex({
     database : 'database_name'
   }
 });
-*/
+
 const psql= new knex({
   client: 'pg',
   connection: {
     connectionString: process.env.DATABASE_URL,
       ssl: true
+  }
+});
+*/
+const psql= knex({
+  client: 'pg',
+  connection: {
+    host : '127.0.0.1',
+    user : 'postgres',
+    password : '12396st',
+    database : 'fastnotes'
   }
 });
 
@@ -51,6 +62,9 @@ app.post('/newNote',(req, res)=>{
   newnote.newnote(req,res,bcrypt,psql)
 })
 
+app.put('/deleteNote',(req, res)=>{
+  deleteNote.deleteNote(req,res,bcrypt,psql)
+})
 
 app.listen(PORT= process.env.PORT || 3000,()=>{
   console.log('running')

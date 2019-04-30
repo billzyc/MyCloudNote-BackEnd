@@ -9,7 +9,8 @@ const fetchnotes = (req,res,bcrypt,psql)=>{
       res.json('no notes')
     }
     else {res.json(data)}
-  }).catch(err=>res.status(400).json('not working'))
+  })
+  .catch(err=>res.status(400).json('not working'))
 
 }
 
