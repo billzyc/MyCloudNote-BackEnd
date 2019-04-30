@@ -24,21 +24,13 @@ const psql= knex({
   }
 });
 
+
+*/
 const psql= new knex({
   client: 'pg',
   connection: {
     connectionString: process.env.DATABASE_URL,
       ssl: true
-  }
-});
-*/
-const psql= knex({
-  client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : '12396st',
-    database : 'fastnotes'
   }
 });
 
