@@ -12,7 +12,6 @@ const editNote=(req,res,bcrypt,psql)=>{
   })
   .catch(err=>res.status(400).json('unable to edit'))
   }
-}
 
 module.exports={
   editNote:editNote
