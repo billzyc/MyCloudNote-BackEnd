@@ -13,7 +13,6 @@ const editNote=require('./components/editNote.js')
 app.use(bodyParser.json());
 app.use(cors());
 
-
 /*use below for local database connection
 const psql= knex({
   client: 'pg',
@@ -40,6 +39,7 @@ const psql= new knex({
       ssl: true
   }
 });
+
 
 app.get('/', (req,res)=>{
   res.json('connected');
