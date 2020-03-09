@@ -5,21 +5,6 @@ link: https://www.fast-notesapp.com/
 web app created for users to efficiently create, store, delete and edit notes and documents
 which gets synced to the user profile they have created.
 
-The [Front End](https://github.com/billzyc/FastNotes-FrontEnd) is created using ReactJS, JavaScript, HTML and CSS 
-
-The Back End is created and deployed with NodeJS, Express, PostgreSQL and Heroku.
-
-The user is able to register and login. Sensitive information such as password is hashed with bcrypt 
-![register](https://user-images.githubusercontent.com/46061028/58063232-50cebb00-7b4b-11e9-87d0-43f45f4ec30d.PNG)
-![signin](https://user-images.githubusercontent.com/46061028/58063283-79ef4b80-7b4b-11e9-9024-bc185f4855ab.PNG)
-
-The user is also able to create, edit, delete and view notes.
-
-![home](https://user-images.githubusercontent.com/46061028/58063289-7e1b6900-7b4b-11e9-88ec-29d52d8cea28.PNG)
-![createNote](https://user-images.githubusercontent.com/46061028/58063292-7f4c9600-7b4b-11e9-8680-5602914cfb33.PNG)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
