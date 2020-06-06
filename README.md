@@ -1,6 +1,7 @@
 ## Fast-Notes Back-End
 
-link: https://www.fast-notesapp.com/
+front-end: https://github.com/billzyc/mycloudnote-FrontEnd
+link: https://mycloudnote.herokuapp.com/
 
 web app created for users to efficiently create, store, delete and edit notes and documents
 which gets synced to the user profile they have created.
